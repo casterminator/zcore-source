@@ -1,5 +1,5 @@
 ---
-name: "zcore-win-1.6.0"
+name: "zcore-win-1.6.1"
 enable_cache: true
 suites:
 - "trusty"
@@ -22,7 +22,7 @@ packages:
 - "ca-certificates"
 - "python"
 remotes:
-- "url": "https://github.com/mosqueiro/zcore-v.1.6.0.git"
+- "url": "https://github.com/zcore-coin/zcore-source.git"
   "dir": "zcore"
 files: []
 script: |
