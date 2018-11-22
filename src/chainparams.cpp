@@ -138,6 +138,16 @@ public:
         vSeeds.push_back(CDNSSeedData("zcore.me", "s8.zcore.cash"));
         vSeeds.push_back(CDNSSeedData("zcore.me", "s9.zcore.cash"));
         vSeeds.push_back(CDNSSeedData("zcore.me", "s10.zcore.cash"));
+        vSeeds.push_back(CDNSSeedData("zcore.me", "s11.zcore.cash"));
+        vSeeds.push_back(CDNSSeedData("zcore.me", "s12.zcore.cash"));
+        vSeeds.push_back(CDNSSeedData("zcore.me", "s13.zcore.cash"));
+        vSeeds.push_back(CDNSSeedData("zcore.me", "s14.zcore.cash"));
+        vSeeds.push_back(CDNSSeedData("zcore.me", "s15.zcore.cash"));
+        vSeeds.push_back(CDNSSeedData("zcore.me", "s16.zcore.cash"));
+        vSeeds.push_back(CDNSSeedData("zcore.me", "s17.zcore.cash"));
+        vSeeds.push_back(CDNSSeedData("zcore.me", "s18.zcore.cash"));
+        vSeeds.push_back(CDNSSeedData("zcore.me", "s19.zcore.cash"));
+        vSeeds.push_back(CDNSSeedData("zcore.me", "s20.zcore.cash"));
 
         //vFixedSeeds.clear(); //! Regtest mode doesn't have any fixed seeds.
         //vSeeds.clear();  //! Regtest mode doesn't have any DNS seeds.
