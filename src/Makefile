@@ -92,7 +92,7 @@ build_triplet = x86_64-pc-linux-gnu
 host_triplet = x86_64-pc-linux-gnu
 am__append_1 = $(BDB_CPPFLAGS)
 am__append_2 = libbitcoin_wallet.a
-am__append_3 = libbitcoin_zmq.a
+#am__append_3 = libbitcoin_zmq.a
 bin_PROGRAMS = $(am__EXEEXT_1) $(am__EXEEXT_2) $(am__EXEEXT_3) \
 	$(am__EXEEXT_4) $(am__EXEEXT_5) $(am__EXEEXT_6)
 TESTS = $(am__EXEEXT_3) $(am__EXEEXT_6)
@@ -100,7 +100,7 @@ am__append_4 = zcored
 am__append_5 = zcore-cli zcore-tx
 #am__append_6 = compat/glibc_compat.cpp
 #am__append_7 = zcored-res.rc
-am__append_8 = $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
+#am__append_8 = $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
 am__append_9 = libbitcoin_wallet.a
 #am__append_10 = zcore-cli-res.rc
 #am__append_11 = zcore-tx-res.rc
@@ -139,10 +139,10 @@ am__append_20 = leveldb/port/port_posix.cc
 #  test/rpc_wallet_tests.cpp
 
 #am__append_25 = $(LIBBITCOIN_WALLET)
-#am__append_26 = $(ZMQ_LIBS)
+##am__append_26 = $(ZMQ_LIBS)
 #am__append_27 = $(CLEAN_BITCOIN_TEST)
 am__append_28 = bench/bench_zcore
-am__append_29 = $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
+#am__append_29 = $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
 am__append_30 = $(LIBBITCOIN_WALLET)
 am__append_31 = $(CLEAN_BITCOIN_BENCH)
 #am__append_32 = qt/zcore-qt
@@ -181,7 +181,7 @@ am__append_31 = $(CLEAN_BITCOIN_BENCH)
 ##am__append_36 = $(BITCOIN_MM)
 ##am__append_37 = $(BITCOIN_RC)
 #am__append_38 = $(LIBBITCOIN_WALLET)
-#am__append_39 = $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
+##am__append_39 = $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
 #am__append_40 = $(CLEAN_QT)
 #am__append_41 = qt/test/test_zcore-qt
 #am__append_42 = qt/test/test_zcore-qt
@@ -190,7 +190,7 @@ am__append_31 = $(CLEAN_BITCOIN_BENCH)
 #  qt/test/paymentservertests.cpp
 
 #am__append_45 = $(LIBBITCOIN_WALLET)
-#am__append_46 = $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
+##am__append_46 = $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
 #am__append_47 = $(CLEAN_BITCOIN_QT_TEST)
 subdir = src
 SUBDIRS =
@@ -494,9 +494,9 @@ libbitcoin_zmq_a_AR = $(AR) $(ARFLAGS)
 libbitcoin_zmq_a_LIBADD =
 am__libbitcoin_zmq_a_SOURCES_DIST = zmq/zmqabstractnotifier.cpp \
 	zmq/zmqnotificationinterface.cpp zmq/zmqpublishnotifier.cpp
-am_libbitcoin_zmq_a_OBJECTS = zmq/libbitcoin_zmq_a-zmqabstractnotifier.$(OBJEXT) \
-	zmq/libbitcoin_zmq_a-zmqnotificationinterface.$(OBJEXT) \
-	zmq/libbitcoin_zmq_a-zmqpublishnotifier.$(OBJEXT)
+#am_libbitcoin_zmq_a_OBJECTS = zmq/libbitcoin_zmq_a-zmqabstractnotifier.$(OBJEXT) \
+#	zmq/libbitcoin_zmq_a-zmqnotificationinterface.$(OBJEXT) \
+#	zmq/libbitcoin_zmq_a-zmqpublishnotifier.$(OBJEXT)
 libbitcoin_zmq_a_OBJECTS = $(am_libbitcoin_zmq_a_OBJECTS)
 qt_libbitcoinqt_a_AR = $(AR) $(ARFLAGS)
 qt_libbitcoinqt_a_LIBADD =
@@ -966,9 +966,9 @@ bench_bench_zcore_OBJECTS = $(am_bench_bench_zcore_OBJECTS)
 am__DEPENDENCIES_1 = $(am__append_14)
 am__DEPENDENCIES_2 = $(am__append_15)
 am__DEPENDENCIES_3 =
-am__DEPENDENCIES_4 =  \
-	$(LIBBITCOIN_ZMQ) \
-	$(am__DEPENDENCIES_3)
+#am__DEPENDENCIES_4 =  \
+#	$(LIBBITCOIN_ZMQ) \
+#	$(am__DEPENDENCIES_3)
 bench_bench_zcore_DEPENDENCIES =  \
 	$(LIBBITCOIN_SERVER) $(LIBBITCOIN_COMMON) \
 	$(LIBBITCOIN_UTIL) $(LIBBITCOIN_CRYPTO) \
@@ -1000,9 +1000,9 @@ am__qt_test_test_zcore_qt_SOURCES_DIST = qt/test/compattests.cpp \
 #	$(am__objects_15)
 qt_test_test_zcore_qt_OBJECTS = $(am_qt_test_test_zcore_qt_OBJECTS) \
 	$(nodist_qt_test_test_zcore_qt_OBJECTS)
-#am__DEPENDENCIES_5 =  \
-#	$(LIBBITCOIN_ZMQ) \
-#	$(am__DEPENDENCIES_3)
+##am__DEPENDENCIES_5 =  \
+##	$(LIBBITCOIN_ZMQ) \
+##	$(am__DEPENDENCIES_3)
 #qt_test_test_zcore_qt_DEPENDENCIES =  \
 #	$(LIBBITCOINQT) $(LIBBITCOIN_SERVER) \
 #	$(am__append_45) $(am__DEPENDENCIES_5) \
@@ -1040,9 +1040,9 @@ am__qt_zcore_qt_SOURCES_DIST = qt/zcore.cpp qt/macdockiconhandler.mm \
 #	qt/qt_zcore_qt-zcore.$(OBJEXT) \
 #	$(am__objects_17) $(am__objects_19)
 qt_zcore_qt_OBJECTS = $(am_qt_zcore_qt_OBJECTS)
-#am__DEPENDENCIES_6 =  \
-#	$(LIBBITCOIN_ZMQ) \
-#	$(am__DEPENDENCIES_3)
+##am__DEPENDENCIES_6 =  \
+##	$(LIBBITCOIN_ZMQ) \
+##	$(am__DEPENDENCIES_3)
 #qt_zcore_qt_DEPENDENCIES = qt/libbitcoinqt.a \
 #	$(LIBBITCOIN_SERVER) $(am__append_38) \
 #	$(am__DEPENDENCIES_6) $(LIBBITCOIN_CLI) \
@@ -1158,8 +1158,8 @@ am__test_test_zcore_SOURCES_DIST = test/arith_uint256_tests.cpp \
 test_test_zcore_OBJECTS = $(am_test_test_zcore_OBJECTS) \
 	$(nodist_test_test_zcore_OBJECTS)
 am__DEPENDENCIES_7 = libbitcoinconsensus.la
-#am__DEPENDENCIES_8 =  \
-#	$(am__DEPENDENCIES_3)
+##am__DEPENDENCIES_8 =  \
+##	$(am__DEPENDENCIES_3)
 #test_test_zcore_DEPENDENCIES =  \
 #	$(LIBBITCOIN_SERVER) $(LIBBITCOIN_CLI) \
 #	$(LIBBITCOIN_COMMON) $(LIBBITCOIN_UTIL) \
@@ -1199,8 +1199,8 @@ am__zcored_SOURCES_DIST = zcored.cpp zcored-res.rc
 #am__objects_25 = zcored-res.$(OBJEXT)
 am_zcored_OBJECTS = zcored-zcored.$(OBJEXT) $(am__objects_25)
 zcored_OBJECTS = $(am_zcored_OBJECTS)
-am__DEPENDENCIES_9 = $(LIBBITCOIN_ZMQ) \
-	$(am__DEPENDENCIES_3)
+#am__DEPENDENCIES_9 = $(LIBBITCOIN_ZMQ) \
+#	$(am__DEPENDENCIES_3)
 zcored_DEPENDENCIES = $(LIBBITCOIN_SERVER) $(LIBBITCOIN_COMMON) \
 	$(LIBUNIVALUE) $(LIBBITCOIN_UTIL) $(LIBBITCOIN_CRYPTO) \
 	$(am__DEPENDENCIES_1) $(am__DEPENDENCIES_2) $(LIBSECP256K1) \
@@ -1561,13 +1561,13 @@ am__relativize = \
     dir1=`echo "$$dir1" | sed -e "$$sed_rest"`; \
   done; \
   reldir="$$dir2"
-ACLOCAL = ${SHELL} /root/node/build-aux/missing aclocal-1.15
+ACLOCAL = ${SHELL} /root/wd/build-aux/missing aclocal-1.15
 AMTAR = $${TAR-tar}
 AM_DEFAULT_VERBOSITY = 0
 AR = /usr/bin/ar
-AUTOCONF = ${SHELL} /root/node/build-aux/missing autoconf
-AUTOHEADER = ${SHELL} /root/node/build-aux/missing autoheader
-AUTOMAKE = ${SHELL} /root/node/build-aux/missing automake-1.15
+AUTOCONF = ${SHELL} /root/wd/build-aux/missing autoconf
+AUTOHEADER = ${SHELL} /root/wd/build-aux/missing autoheader
+AUTOMAKE = ${SHELL} /root/wd/build-aux/missing automake-1.15
 AWK = gawk
 BDB_CPPFLAGS = 
 BDB_LIBS = -ldb_cxx-4.8
@@ -1589,7 +1589,7 @@ CLIENT_VERSION_BUILD = 0
 CLIENT_VERSION_IS_RELEASE = true
 CLIENT_VERSION_MAJOR = 1
 CLIENT_VERSION_MINOR = 6
-CLIENT_VERSION_REVISION = 1
+CLIENT_VERSION_REVISION = 2
 COMPARISON_TOOL_REORG_TESTS = 0
 COPYRIGHT_YEAR = 2018
 CPP = gcc -E
@@ -1655,11 +1655,11 @@ LTLIBOBJS =
 LT_SYS_LIBRARY_PATH = 
 LUPDATE = 
 MAINT = 
-MAKEINFO = ${SHELL} /root/node/build-aux/missing makeinfo
+MAKEINFO = ${SHELL} /root/wd/build-aux/missing makeinfo
 MAKENSIS = 
 MANIFEST_TOOL = :
 MINIUPNPC_CPPFLAGS = 
-MINIUPNPC_LIBS = -lminiupnpc
+MINIUPNPC_LIBS = 
 MKDIR_P = /bin/mkdir -p
 MOC = 
 MOC_DEFS = -DHAVE_CONFIG_H -I$(srcdir)
@@ -1675,10 +1675,10 @@ OTOOL64 =
 PACKAGE = zcore
 PACKAGE_BUGREPORT = https://github.com/zcore-coin/zcore-source/issues
 PACKAGE_NAME = ZCore
-PACKAGE_STRING = ZCore 1.6.1
+PACKAGE_STRING = ZCore 1.6.2
 PACKAGE_TARNAME = zcore
 PACKAGE_URL = 
-PACKAGE_VERSION = 1.6.1
+PACKAGE_VERSION = 1.6.2
 PATH_SEPARATOR = :
 PIC_FLAGS = -fPIC
 PIE_FLAGS = -fPIE
@@ -1729,18 +1729,18 @@ TESTDEFS =
 UIC = 
 USE_QRCODE = 
 USE_UPNP = 
-VERSION = 1.6.1
+VERSION = 1.6.2
 WINDOWS_BITS = 
 WINDRES = 
 X11XCB_CFLAGS = 
 X11XCB_LIBS = 
 XGETTEXT = 
 ZMQ_CFLAGS = 
-ZMQ_LIBS = -lzmq
-abs_builddir = /root/node/src
-abs_srcdir = /root/node/src
-abs_top_builddir = /root/node
-abs_top_srcdir = /root/node
+ZMQ_LIBS = 
+abs_builddir = /root/wd/src
+abs_srcdir = /root/wd/src
+abs_top_builddir = /root/wd
+abs_top_srcdir = /root/wd
 ac_ct_AR = ar
 ac_ct_CC = gcc
 ac_ct_CXX = g++
@@ -1772,7 +1772,7 @@ host_vendor = pc
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
-install_sh = ${SHELL} /root/node/build-aux/install-sh
+install_sh = ${SHELL} /root/wd/build-aux/install-sh
 libdir = ${exec_prefix}/lib
 libexecdir = ${exec_prefix}/libexec
 localedir = ${datarootdir}/locale
@@ -1991,13 +1991,13 @@ libbitcoin_server_a_SOURCES = \
   versionbits.cpp \
   $(BITCOIN_CORE_H)
 
-LIBBITCOIN_ZMQ = libbitcoin_zmq.a
-libbitcoin_zmq_a_CPPFLAGS = $(BITCOIN_INCLUDES) $(ZMQ_CFLAGS)
-libbitcoin_zmq_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-libbitcoin_zmq_a_SOURCES = \
-  zmq/zmqabstractnotifier.cpp \
-  zmq/zmqnotificationinterface.cpp \
-  zmq/zmqpublishnotifier.cpp
+#LIBBITCOIN_ZMQ = libbitcoin_zmq.a
+#libbitcoin_zmq_a_CPPFLAGS = $(BITCOIN_INCLUDES) $(ZMQ_CFLAGS)
+#libbitcoin_zmq_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+#libbitcoin_zmq_a_SOURCES = \
+#  zmq/zmqabstractnotifier.cpp \
+#  zmq/zmqnotificationinterface.cpp \
+#  zmq/zmqpublishnotifier.cpp
 
 
 # wallet: shared between zcored and zcore-qt, but only linked
